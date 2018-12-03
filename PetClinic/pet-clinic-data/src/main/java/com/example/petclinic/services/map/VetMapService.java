@@ -1,8 +1,12 @@
 package com.example.petclinic.services.map;
 
-import com.example.petclinic.model.Vet;
+import org.springframework.stereotype.Service;
 
-public class VetMapService extends BaseMapService<Long, Vet> {
+import com.example.petclinic.model.Vet;
+import com.example.petclinic.services.VetService;
+
+@Service
+public class VetMapService extends MapFunctions<Long, Vet> implements VetService {
 
 	@Override
 	public Vet save(Vet obj) {

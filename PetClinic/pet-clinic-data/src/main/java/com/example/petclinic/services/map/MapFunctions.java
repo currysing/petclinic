@@ -7,7 +7,7 @@ import java.util.Set;
 
 import com.example.petclinic.services.CrudService;
 
-public abstract class BaseMapService<ID, T> implements CrudService<T, ID> {
+public abstract class MapFunctions<ID, T> implements CrudService<T, ID> {
 
 	private Map<ID, T> map = new HashMap<ID, T>();
 
