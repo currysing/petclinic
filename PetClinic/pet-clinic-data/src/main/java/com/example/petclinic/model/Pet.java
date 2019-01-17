@@ -8,7 +8,7 @@ public class Pet extends BaseEntity  {
 	private PetType petType;
 	private LocalDate birthDate;
 	
-	
+	// ****************************************************
 	public Owner getOwner() {
 		return owner;
 	}
